@@ -36,7 +36,7 @@ mongodb:
     rootPassword: "example"
   # global: 
   #   storageClass: gp2
-  # persistence:
-  #   storageClass: ebssc
+  persistence:
+    storageClass: ebssc
 
 
