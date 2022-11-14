@@ -11,7 +11,10 @@ spec:
     repoURL: 'https://prometheus-community.github.io/helm-charts'
     targetRevision: 34.1.1
     chart: kube-prometheus-stack
-    includeCRDs: true
+    helm:
+      parameters:
+        - name: installCRDs
+          value: "true"
   destination:
     server: "https://kubernetes.default.svc"
     namespace: default
@@ -19,5 +22,5 @@ spec:
     automated:
       prune: true
       selfHeal: true
-patches:
-  - prome-patch.yml
+# patches:
+#   - prome-patch.yml
