@@ -37,7 +37,7 @@ fluentd:
     serviceMonitor:
       enabled: true
       additionalLabels:
-        release: prometheus
+        release: prometheus-grafana-stack
       # namespace: "production"
 
     prometheusRule:
@@ -60,7 +60,7 @@ fluentd:
         annotations:
           summary: "Fluentd Scrape Missing"
         description: "Fluentd instance has disappeared from Prometheus target discovery"
-        
+
   fileConfigs:
     01_sources.conf: |-
       <source>
