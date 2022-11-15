@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: EFK-stack
+  name: efk-stack
   namespace: default
 spec:
   project: default
