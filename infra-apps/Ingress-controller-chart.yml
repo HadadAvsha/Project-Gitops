@@ -16,7 +16,7 @@ spec:
         - name: "controller.metrics.serviceMonitor.enabled"
           value: "true"
         - name: "controller.metrics.serviceMonitor.additionalLabels.release"
-          value: "prometheus"
+          value: "prometheus-grafana-stack"
   destination:
     server: "https://kubernetes.default.svc"
     namespace: default
