@@ -34,7 +34,4 @@ mongodb:
   auth:
     rootUser: root
     rootPassword: "example"
-  # global: 
-  #   storageClass: gp2
-  # persistence:
-  #   storageClass: ebssc
+
